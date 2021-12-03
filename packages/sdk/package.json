@@ -1,0 +1,19 @@
+{
+  "name": "@modules/sdk",
+  "version": "0.0.1",
+  "license": "ISC",
+  "baseUrl": "./src",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "targets": {
+    "main": {
+      "optimize": true
+    }
+  },
+  "scripts": {
+    "prepublishOnly": "yarn build",
+    "dev": "yarn build",
+    "build": "yarn parcel build src/index.ts",
+    "start": "yarn parcel src/index.ts"
+  }
+}
